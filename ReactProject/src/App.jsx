@@ -3,11 +3,26 @@ import Hello from './components/Hello'
 
 function App() {
   
+  //passing array using props
+//const id=[1,2,3,4]
 
+const person= {
+  name:"rob",
+  message:"hii",
+  id:[1,2,3,4]
+
+}
   return (
     <div className="App">
-      <Hello name="john" message="hi there"/>
-      <Hello name="suru"/>
+      <Hello
+      person={person}
+
+      //  name="john"
+      //  message="hi there" 
+      //  id={id} 
+
+       />
+      {/* <Hello name="suru" message="hello!"/> */}
      
     </div>
   )
