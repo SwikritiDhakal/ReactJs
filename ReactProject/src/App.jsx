@@ -1,4 +1,5 @@
 
+import Fruits from './components/Fruits'
 import Hello from './components/Hello'
 
 function App() {
@@ -14,15 +15,16 @@ const person= {
 }
   return (
     <div className="App">
-      <Hello
+      {/* <Hello
       person={person}
 
       //  name="john"
       //  message="hi there" 
       //  id={id} 
 
-       />
+       /> */}
       {/* <Hello name="suru" message="hello!"/> */}
+      <Fruits/>
      
     </div>
   )
