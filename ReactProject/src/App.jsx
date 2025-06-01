@@ -1,5 +1,6 @@
 
 import ConditionalComponent from './components/ConditionalComponent'
+import Counter from './components/Counter'
 import Fruits from './components/Fruits'
 import Hello from './components/Hello'
 import Message from './components/Message'
@@ -28,8 +29,10 @@ const person= {
       {/* <Hello name="suru" message="hello!"/> */}
       {/* <Fruits/>
       <ConditionalComponent/> */}
-      <Message/>
+      {/* <Message/> */}
      
+        <Counter/>
+
     </div>
   )
 }
