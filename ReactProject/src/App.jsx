@@ -5,6 +5,7 @@ import Form from './components/Form'
 import Fruits from './components/Fruits'
 import Hello from './components/Hello'
 import Message from './components/Message'
+import UseReducerHookExample from './components/UseReducerHookExample'
 
 function App() {
   
@@ -33,7 +34,8 @@ const person= {
       {/* <Message/> */}
 {/*      
         <Counter/> */}
-        <Form/>
+        {/* <Form/> */}
+        <UseReducerHookExample/>
 
     </div>
   )
