@@ -1,10 +1,12 @@
 
+import Bank from './components/Bank'
 import ConditionalComponent from './components/ConditionalComponent'
 import Counter from './components/Counter'
 import Form from './components/Form'
 import Fruits from './components/Fruits'
 import Hello from './components/Hello'
 import Message from './components/Message'
+import UseRed from './components/UseRed'
 import UseReducerHookExample from './components/UseReducerHookExample'
 
 function App() {
@@ -35,7 +37,9 @@ const person= {
 {/*      
         <Counter/> */}
         {/* <Form/> */}
-        <UseReducerHookExample/>
+        {/* <UseReducerHookExample/> */}
+        {/* <UseRed/> */}
+        <Bank/>
 
     </div>
   )
