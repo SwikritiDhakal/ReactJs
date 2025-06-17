@@ -5,7 +5,7 @@ export default function HomePage(){
 const [username, setUsername]= useState("");
 
     function handleClick(){
-        navigate('/dashboard/profile')
+        navigate('/dashboard/profile',{state:{username}})
 
     }
 
@@ -14,4 +14,4 @@ const [username, setUsername]= useState("");
         <input type="text" value={username}  onChange={(e)=>setUsername(e.target.value)}/>
 <button onClick={handleClick}>Go to Profile</button>
     </div>
-}
+}  

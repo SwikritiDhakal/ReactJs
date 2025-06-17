@@ -16,6 +16,8 @@ import Nav from './components/Nav'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
 import Product from './pages/Product'
+import ContextExample from './components/ContextExample'
+import Checkout from './components/Checkout'
 
 
 function App() {
@@ -29,20 +31,28 @@ const person= {
   id:[1,2,3,4]
 
 }
-  return(<BrowserRouter> 
-  <Nav/>
-      <Routes>
-        <Route path='*' element={<PageNotfound/>}/>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path='/dashboard' element={<Dashboard/>}>
-        <Route path='profile' element={<Profile/>}/>
-        <Route path='settings' element={<Settings/>}/>
-         </Route>
-         <Route path='/product/:id' element={<Product/>}/>
-      </Routes>
-      
-      </BrowserRouter>
+  return(
+<div>
+    <ContextExample/>
+ 
+</div>
   )
+
+
+  // <BrowserRouter> 
+  // <Nav/>
+  //     <Routes>
+  //       <Route path='*' element={<PageNotfound/>}/>
+  //       <Route path="/" element={<HomePage/>}/>
+  //       <Route path='/dashboard' element={<Dashboard/>}>
+  //       <Route path='profile' element={<Profile/>}/>
+  //       <Route path='settings' element={<Settings/>}/>
+  //        </Route>
+  //        <Route path='/product/:id' element={<Product/>}/>
+  //     </Routes>
+      
+  //     </BrowserRouter>
+
   // (
 
     // <div className="App">
