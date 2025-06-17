@@ -18,6 +18,7 @@ import Settings from './pages/Settings'
 import Product from './pages/Product'
 import ContextExample from './components/ContextExample'
 import Checkout from './components/Checkout'
+import Logout from './components/Logout'
 
 
 function App() {
@@ -34,6 +35,7 @@ const person= {
   return(
 <div>
     <ContextExample/>
+  
  
 </div>
   )
