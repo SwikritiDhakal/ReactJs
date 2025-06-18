@@ -9,11 +9,12 @@ export default function Logout() {
     return <p>⚠ Context is not available</p>;
   }
 
-  const { setUser } = context;
+  const { dispatch } = context;
 
   return (
     <div>
-      <button onClick={() => setUser("guest")}>Logout</button>
+      {/* <button onClick={() => setUser("guest")}>Logout</button> */}
+      <button onClick={() => dispatch({type:"logout", payload:"guest"})}>Logout</button>
     </div>
   );
 }
