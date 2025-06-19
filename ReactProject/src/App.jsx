@@ -19,10 +19,17 @@ import Product from './pages/Product'
 import ContextExample from './components/ContextExample'
 import Checkout from './components/Checkout'
 import Logout from './components/Logout'
+import useDisplay from './hooks/useDisplay'
 
 
 function App() {
-  
+
+
+  const[message , displayMessage]= useDisplay();
+  displayMessage();
+ //const msg=  displayMessage();
+
+
   //passing array using props
 //const id=[1,2,3,4]
 
@@ -34,7 +41,8 @@ const person= {
 }
   return(
 <div>
-    <ContextExample/>
+    {/* <ContextExample/> */}
+    {message}
   
  
 </div>
