@@ -20,13 +20,14 @@ import ContextExample from './components/ContextExample'
 import Checkout from './components/Checkout'
 import Logout from './components/Logout'
 import useDisplay from './hooks/useDisplay'
+import LoginHook from './components/LoginHook'
 
 
 function App() {
 
 
-  const[message , displayMessage]= useDisplay();
-  displayMessage();
+  // const[message , displayMessage]= useDisplay();
+  // displayMessage();
  //const msg=  displayMessage();
 
 
@@ -42,7 +43,8 @@ const person= {
   return(
 <div>
     {/* <ContextExample/> */}
-    {message}
+    {/* {message} */}
+    <LoginHook/>
   
  
 </div>
